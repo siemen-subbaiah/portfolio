@@ -1,0 +1,403 @@
+:root {
+  --clr-prim: #121212;
+  --clr-font: #fff;
+  --clr-sec: #272727;
+  --box-shadow: 4px 0 10px -3px hsl(0deg, 0%, 0%);
+}
+
+.light {
+  --clr-prim: #f0f0f0;
+  --clr-font: #282c35;
+  --clr-sec: #fff;
+  --box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #892cdc;
+}
+
+body {
+  line-height: 1.6;
+  font-family: 'Montserrat';
+  background-color: var(--clr-prim);
+  transition: all 0.2s ease-in;
+}
+
+/* UTILITIES */
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-font);
+}
+
+.container {
+  /* border: 1px solid #fff; */
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.3rem 1.3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  height: 100%;
+  gap: 1.8rem;
+  place-items: center;
+}
+
+.theme-toggle {
+  color: var(--clr-font);
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  height: 80vh;
+}
+
+.hero {
+  height: 75vh;
+}
+
+.hero img {
+  width: 80%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--clr-sec);
+  box-shadow: var(--box-shadow);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items li {
+  padding: 0rem 1.7rem;
+}
+
+.hero-contents {
+  color: var(--clr-font);
+}
+
+.hero-contents h2 {
+  font-weight: normal;
+}
+
+.hero-contents .btn {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  background-color: #892cdc;
+  z-index: 1;
+  position: relative;
+}
+
+/* ABOUT ME SECTION */
+
+.about-me {
+  margin: 2rem 0;
+  /* height: 30vh; */
+}
+
+.about-me h1 {
+  font-weight: normal;
+  font-size: 2.5rem;
+  color: var(--clr-font);
+}
+.about-me p {
+  line-height: 1.7;
+  background-color: var(--clr-sec);
+  padding: 1rem;
+  color: var(--clr-font);
+  box-shadow: var(--box-shadow);
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  margin: 3rem 0;
+  color: var(--clr-font);
+}
+#projects h1 {
+  margin: 1rem 0;
+  font-size: 2.3rem;
+  font-weight: normal;
+  background-color: var(--clr-sec);
+}
+
+.card {
+  background-color: var(--clr-sec);
+  box-shadow: var(--box-shadow);
+  transition: all 0.2s ease-in;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card-body {
+  padding: 1rem;
+}
+.card-body h2 {
+  font-size: 1.6rem;
+}
+.cards {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.2rem;
+}
+
+.tags {
+  display: flex;
+}
+
+.tags p {
+  background-color: var(--clr-prim);
+  padding: 0.2rem;
+  margin: 0 0.3rem;
+  margin-top: 0.4rem;
+  border-radius: 5px;
+  line-height: 1.3;
+  font-size: 13px;
+}
+
+#js {
+  background-color: #f7df1e;
+  color: black;
+}
+
+#css {
+  background-color: #2965f1;
+  color: #fff;
+}
+#html {
+  background-color: #f53900;
+  color: #fff;
+}
+#react {
+  background-color: #222222;
+  color: #61daf6;
+}
+#bt {
+  background-color: #6f3bbb;
+  color: #fff;
+}
+
+/* CONTACT ME */
+
+#contact {
+  margin-bottom: -10rem;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-content h1 {
+  color: var(--clr-font);
+  font-size: 3rem;
+  font-weight: normal;
+}
+.contact-content p {
+  color: var(--clr-font);
+}
+
+.form {
+  width: 90%;
+  background-color: var(--clr-sec);
+  padding: 1rem;
+  z-index: 1;
+  position: relative;
+}
+
+#contact::before,
+#contact::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #892cdc;
+  transform: skewY(-2.8deg);
+  -webkit-transform: skewY(-2.8deg);
+  -moz-transform: skewY(-2.8deg);
+  -ms-transform: skewY(-2.8deg);
+}
+
+#name {
+  width: 100%;
+  height: 35px;
+  margin: 0.5rem 0;
+  border: none;
+  outline: none;
+  border: 1px solid var(--clr-font);
+  font-size: 1.1rem;
+  background-color: transparent;
+  color: var(--clr-font);
+  padding: 0.5rem;
+}
+#email {
+  width: 100%;
+  height: 35px;
+  margin: 0.5rem 0;
+  border: 0.1px solid var(--clr-font);
+  outline: none;
+  font-size: 1.1rem;
+  background-color: transparent;
+  color: var(--clr-font);
+  padding: 0.5rem;
+}
+
+::placeholder {
+  font-size: 0.9rem;
+  color: var(--clr-font);
+}
+
+#message {
+  width: 100%;
+  background-color: transparent;
+  height: 200px;
+  border: 1px solid var(--clr-font);
+  color: var(--clr-font);
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+.btn-block {
+  width: 100%;
+  background-color: #892cdc;
+  font-size: 1.3rem;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 12rem;
+  height: 15vh;
+  background-color: #892cdc;
+}
+
+.logo {
+  position: relative;
+  z-index: 1;
+  align-self: flex-start;
+}
+
+.footer-grid img {
+  width: 160%;
+}
+
+.social i {
+  font-size: 1.5rem;
+  margin: 0.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ham {
+  display: none;
+}
+
+#logo2 {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hero img {
+    align-self: flex-start;
+  }
+
+  .hero-contents {
+    text-align: center;
+  }
+  .hero-contents h2 {
+    font-size: 1.3rem;
+  }
+  .hero-contents h1 {
+    font-size: 1.5rem;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-items li {
+    padding: 0.5rem 1.5rem;
+  }
+  .nav-items {
+    flex-wrap: wrap;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+  }
+  .ul-show {
+    height: 5.1rem;
+  }
+  .hero-section .logo {
+    width: 50px;
+    margin-left: 1rem;
+  }
+  .contact-content h1 {
+    color: var(--clr-font);
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  .about-me h1 {
+    font-size: 2.1rem;
+  }
+
+  .ham {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    color: var(--clr-font);
+    top: 1rem;
+    right: 1.5rem;
+  }
+  .social i {
+    color: var(--clr-font);
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-contents h2 {
+    font-size: 1.15rem;
+  }
+  .hero-contents h1 {
+    font-size: 1.25rem;
+  }
+}
