@@ -178,6 +178,7 @@ nav {
   font-size: 1.6rem;
 }
 .cards {
+  overflow: hidden;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.2rem;
 }
