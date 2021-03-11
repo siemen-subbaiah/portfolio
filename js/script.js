@@ -1,18 +1,24 @@
-//NavBar Toggle
-const ham = document.querySelector('.ham');
+//SELECTORS!
 const logo = document.getElementById('logo2');
 const Mainlogo = document.getElementById('logo1');
 const navItems = document.querySelector('.nav-items');
-ham.addEventListener('click', () => {
-  navItems.classList.toggle('ul-show');
-});
+const menu = document.querySelector('.menu');
+const navBar = document.querySelector('nav');
 
-//Theme Toggle
-const toggler = document.querySelector('.theme-toggle');
+//Theme Toggle!
+
+const toggler = document.querySelector('.switch-btn');
+
 toggler.addEventListener('click', () => {
   document.body.classList.toggle('light');
-  logo.style.display = 'block';
-  Mainlogo.style.display = 'none';
+  toggler.classList.toggle('slide');
+  if (toggler.classList.contains('slide')) {
+    logo.style.display = 'block';
+    Mainlogo.style.display = 'none';
+  } else {
+    logo.style.display = 'none';
+    Mainlogo.style.display = 'block';
+  }
 });
 
 //GSAP
