@@ -207,9 +207,7 @@ nav {
 .card {
   background-color: var(--clr-sec);
   box-shadow: var(--box-shadow);
-  transition: all 0.2s ease-in;
 }
-
 .card-body {
   padding: 1rem;
 }
@@ -227,7 +225,7 @@ nav {
   margin: 0.5rem 0;
 }
 
-.tags p {
+.initial-style {
   background-color: var(--clr-prim);
   padding: 0.2rem;
   margin-right: 0.7rem;
@@ -237,24 +235,24 @@ nav {
   font-size: 13px;
 }
 
-#js {
+.js {
   background-color: #f7df1e;
   color: black;
 }
 
-#css {
+.css {
   background-color: #2965f1;
   color: #fff;
 }
-#html {
+.html {
   background-color: #f53900;
   color: #fff;
 }
-#react {
+.react {
   background-color: #222222;
   color: #61daf6;
 }
-#bt {
+.bt {
   background-color: #6f3bbb;
   color: #fff;
 }
