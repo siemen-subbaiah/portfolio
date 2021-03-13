@@ -6,7 +6,6 @@ const menu = document.querySelector('.menu');
 const navBar = document.querySelector('nav');
 
 //Theme Toggle!
-
 const toggler = document.querySelector('.switch-btn');
 
 toggler.addEventListener('click', () => {

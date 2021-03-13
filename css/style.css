@@ -93,7 +93,7 @@ img {
 }
 
 .hero img {
-  width: 90%;
+  width: 100%;
 }
 
 nav {
@@ -199,9 +199,11 @@ nav {
 }
 #projects h1 {
   margin: 1rem 0;
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   font-weight: normal;
   background-color: var(--clr-sec);
+  font-family: 'Poppins';
+  padding: 0.3rem;
 }
 
 .card {
@@ -344,7 +346,7 @@ nav {
 /* FOOTER */
 footer {
   margin-top: 12rem;
-  height: 15vh;
+  height: 17.7vh;
   background-color: #892cdc;
 }
 
@@ -371,6 +373,21 @@ footer {
 
 #logo2 {
   display: none;
+}
+
+.mail {
+  color: var(--clr-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail svg {
+  font-size: 1.5rem;
+}
+
+.mail p {
+  font-family: 'Poppins';
 }
 
 @media (max-width: 600px) {
@@ -448,6 +465,12 @@ footer {
   .social svg {
     color: var(--clr-font);
   }
+  footer {
+    height: 15vh;
+  }
+  .soc-links {
+    text-align: center;
+  }
 }
 
 @media (max-width: 400px) {
@@ -456,5 +479,8 @@ footer {
   }
   .hero-contents h1 {
     font-size: 1.3rem;
+  }
+  .mail p {
+    font-size: 0.9rem;
   }
 }
