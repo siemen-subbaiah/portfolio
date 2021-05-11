@@ -255,7 +255,11 @@ nav {
   color: #61daf6;
 }
 .bt {
-  background-color: #6f3bbb;
+  background-color: #7952b3;
+  color: #fff;
+}
+.gjs {
+  background-color: #7026b9;
   color: #fff;
 }
 
@@ -343,6 +347,28 @@ nav {
   font-size: 1.3rem;
 }
 
+/* THANKS */
+#thanks {
+  color: var(--clr-font);
+  text-align: center;
+  margin: 4rem 0;
+}
+
+#thanks h1 {
+  font-size: 2rem;
+}
+
+#thanks p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+#thanks .btn {
+  margin: 0.6rem 0;
+  background-color: #892cdc;
+  padding: 0.4rem 2rem;
+}
+
 /* FOOTER */
 footer {
   margin-top: 12rem;
@@ -376,7 +402,6 @@ footer {
 }
 
 .mail {
-  color: var(--clr-font);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,6 +412,7 @@ footer {
 }
 
 .mail p {
+  color: #fff;
   font-family: 'Poppins';
 }
 
