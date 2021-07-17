@@ -463,7 +463,7 @@ footer {
   }
 
   .hero {
-    height: 110vh;
+    height: 140vh;
   }
   .hero img {
     align-self: flex-start;
@@ -546,5 +546,11 @@ footer {
   }
   .mail p {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 310px) {
+  .hero {
+    height: 160vh;
   }
 }
