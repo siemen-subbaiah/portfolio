@@ -2,9 +2,10 @@
   --clr-prim: #121212;
   --clr-font: #fff;
   --clr-sec: #272727;
-  --clr-navCustom: #383838;
+  --clr-navCustom: #756464;
   --box-shadow: 4px 0 10px -3px hsl(0deg, 0%, 0%);
   --purple: #892cdc;
+  --tog-clr: #fff;
 }
 
 [data-theme='light'] {
@@ -14,6 +15,7 @@
   --clr-navCustom: #fff;
   --box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
   --purple: #892cdc;
+  --tog-clr: #3d3a3a;
 }
 
 * {
@@ -103,6 +105,9 @@ nav {
   background-color: var(--clr-sec);
   box-shadow: var(--box-shadow);
   font-family: 'Poppins';
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 .logs {
@@ -140,7 +145,7 @@ nav {
   height: 1.23rem;
   top: 0.1rem;
   right: 0.2rem;
-  background: var(--clr-font);
+  background: var(--tog-clr);
   border-radius: 20px;
   margin: 0;
   display: block;
@@ -188,9 +193,14 @@ nav {
   padding: 1rem;
   color: var(--clr-font);
   box-shadow: var(--box-shadow);
+  border-radius: 5px;
 }
 
 /* PROJECTS SECTION */
+
+.sub-projects-heading {
+  margin: 2rem 0;
+}
 
 #projects {
   margin-top: 3rem;
@@ -204,6 +214,8 @@ nav {
   background-color: var(--clr-sec);
   font-family: 'Poppins';
   padding: 0.3rem;
+  border-radius: 7px;
+  box-shadow: var(--box-shadow);
 }
 
 .card {
@@ -216,6 +228,12 @@ nav {
 .card-body h2 {
   font-size: 1.6rem;
 }
+
+.special {
+  line-height: 1.25;
+  margin: 0.1rem 0;
+}
+
 .cards {
   overflow: hidden;
   grid-template-columns: repeat(3, 1fr);
@@ -263,6 +281,16 @@ nav {
   color: #fff;
 }
 
+.firebase {
+  background-color: #ffca28;
+  color: black;
+}
+
+.strapi {
+  background-color: #1e1d80;
+  color: #fff;
+}
+
 /* CONTACT ME */
 
 #contact {
@@ -286,6 +314,7 @@ nav {
   padding: 1rem;
   z-index: 1;
   position: relative;
+  border-radius: 7px;
 }
 
 #contact::before,
@@ -495,6 +524,10 @@ footer {
   }
   .social svg {
     color: var(--clr-font);
+  }
+  .mail p {
+    color: var(--clr-font);
+    font-family: 'Poppins';
   }
   footer {
     height: 15vh;
