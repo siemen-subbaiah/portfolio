@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 :root {
   --clr-prim: #121212;
   --clr-font: #fff;
@@ -31,7 +33,7 @@
 
 body {
   line-height: 1.6;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   background-color: var(--clr-prim);
   transition: all 0.2s ease-in;
 }
@@ -284,6 +286,11 @@ nav {
 .firebase {
   background-color: #ffca28;
   color: black;
+}
+
+.redux {
+  background-color: #764abc;
+  color: #fff;
 }
 
 .strapi {
