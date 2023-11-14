@@ -17,7 +17,7 @@ const message = document.querySelector('#message');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   emailjs
-    .send('service_x5agap3', 'template_8upsmbs', {
+    .send('service_npuonpd', 'template_8upsmbs', {
       name: name.value,
       email: email.value,
       message: message.value,
