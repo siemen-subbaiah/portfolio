@@ -134,7 +134,7 @@ nav {
 
 .switch-btn {
   position: absolute;
-  top: 1.3rem;
+  top: 1.1rem;
   right: 11.5rem;
   padding: 0.65rem;
   width: 3rem;
@@ -366,22 +366,24 @@ nav {
   margin: 0.5rem 0;
   border: none;
   outline: none;
-  border: 1px solid var(--clr-font);
+  border: 1px solid #e5e7eb;
   font-size: 1.1rem;
   background-color: transparent;
   color: var(--clr-font);
   padding: 0.5rem;
+  border-radius: 4px;
 }
 #email {
   width: 100%;
   height: 35px;
   margin: 0.5rem 0;
-  border: 0.1px solid var(--clr-font);
+  border: 0.1px solid #e5e7eb;
   outline: none;
   font-size: 1.1rem;
   background-color: transparent;
   color: var(--clr-font);
   padding: 0.5rem;
+  border-radius: 4px;
 }
 
 ::placeholder {
@@ -393,10 +395,11 @@ nav {
   width: 100%;
   background-color: transparent;
   height: 200px;
-  border: 1px solid var(--clr-font);
+  border: 1px solid #e5e7eb;
   color: var(--clr-font);
   padding: 0.5rem;
   font-size: 1.2rem;
+  border-radius: 4px;
 }
 .btn-block {
   width: 100%;
@@ -462,6 +465,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .mail svg {
@@ -470,6 +474,12 @@ footer {
 
 .mail p {
   color: #fff;
+}
+
+.soc-links {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 600px) {
