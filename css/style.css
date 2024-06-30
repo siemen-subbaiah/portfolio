@@ -132,37 +132,18 @@ nav {
   padding: 0rem 2.5rem;
 }
 
-.switch-btn {
-  position: absolute;
-  top: 1.1rem;
-  right: 11.5rem;
-  padding: 0.65rem;
-  width: 3rem;
-  color: cornflowerblue;
-  border-radius: 20px;
+.toggle-btn {
+  background: transparent;
   outline: none;
+  border: 0;
   cursor: pointer;
-  border: none;
-  height: 1.45rem;
-  transition: all 0.3s linear;
-  background: #892cdc;
+  font-size: 20px;
+  position: relative;
+  top: 2px;
 }
 
-.switch {
-  position: absolute;
-  width: 40%;
-  height: 1.23rem;
-  top: 0.1rem;
-  right: 0.2rem;
-  background: var(--tog-clr);
-  border-radius: 20px;
-  margin: 0;
-  display: block;
-  transition: all 0.3s linear;
-}
-
-.slide .switch {
-  right: 54%;
+.dark-icon {
+  display: none;
 }
 
 .hero-contents {
@@ -488,6 +469,12 @@ footer {
     align-items: center;
   }
 
+  .toggle-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+  }
+
   .container {
     padding: 0 40px;
   }
@@ -495,15 +482,6 @@ footer {
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
-
-  .switch-btn {
-    top: 1.5rem;
-    right: 1rem;
-    padding: 0.65rem;
-    width: 3rem;
-    height: 1.45rem;
-  }
-
   .hero {
     height: 140vh;
   }
@@ -515,6 +493,8 @@ footer {
   .hero-contents {
     text-align: center;
     justify-self: center;
+    position: relative;
+    top: 85px;
   }
   .hero-contents h2 {
     font-size: 1.5rem;

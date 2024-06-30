@@ -3,8 +3,8 @@ window.addEventListener('load', () => {
 });
 
 //SELECTORS!
-const logo = document.getElementById('logo2');
 const Mainlogo = document.getElementById('logo1');
+const logo = document.getElementById('logo2');
 const navItems = document.querySelector('.nav-items');
 const menu = document.querySelector('.menu');
 const navBar = document.querySelector('nav');
@@ -34,32 +34,40 @@ form.addEventListener('submit', (e) => {
 });
 
 //Theme Toggle!
-const toggler = document.querySelector('.switch-btn');
+const darkBtn = document.querySelector('.dark-icon');
+const lightBtn = document.querySelector('.light-icon');
 
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme) {
   document.documentElement.setAttribute('data-theme', currentTheme);
   if (currentTheme === 'light') {
-    toggler.classList.add('slide');
+    darkBtn.style.display = 'block';
+    lightBtn.style.display = 'none';
     logo.style.display = 'block';
     Mainlogo.style.display = 'none';
   }
 }
-toggler.addEventListener('click', () => {
-  // document.body.classList.toggle('light');
-  toggler.classList.toggle('slide');
-  if (toggler.classList.contains('slide')) {
-    logo.style.display = 'block';
-    Mainlogo.style.display = 'none';
-    document.documentElement.setAttribute('data-theme', 'light');
-    localStorage.setItem('theme', 'light');
-  } else {
+
+lightBtn.addEventListener('click', () => configureTheme('light'));
+darkBtn.addEventListener('click', () => configureTheme('dark'));
+
+const configureTheme = (theme) => {
+  if (theme === 'dark') {
     logo.style.display = 'none';
     Mainlogo.style.display = 'block';
     document.documentElement.setAttribute('data-theme', 'dark');
     localStorage.setItem('theme', 'dark');
+    lightBtn.style.display = 'block';
+    darkBtn.style.display = 'none';
+  } else {
+    logo.style.display = 'block';
+    Mainlogo.style.display = 'none';
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('theme', 'light');
+    lightBtn.style.display = 'none';
+    darkBtn.style.display = 'block';
   }
-});
+};
 
 //GSAP
 const timeline = gsap.timeline({
