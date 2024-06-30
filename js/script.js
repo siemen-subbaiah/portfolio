@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-  emailjs.init('user_2ycGHDtiEG2OA8KCMYXOt');
+  emailjs.init('mnk-2C2IOu0svGZs-');
 });
 
 //SELECTORS!
